@@ -20,7 +20,7 @@
             pendo.initialize({
                 visitor: {
                     //id:              'VISITOR-UNIQUE-ID'   // Required if user is logged in
-                    // email:        // Recommended if using Pendo Feedback, or NPS Email
+                    email: 'whatever'+Math.random()
                     // full_name:    // Recommended if using Pendo Feedback
                     // role:         // Optional
     
@@ -51,6 +51,7 @@
   <div class="page-header pt-4 pb-5">
     <div class="container-lg">
       <div class="text-center">
+        Amit
         <a href="{{ "/" | relative_url}}"><img class="logo py-3" src="{{ "/assets/img/logomark.svg" | relative_url}}" alt="GitHub and Government"></a>
         <ul>
           <li class="text-center d-block d-sm-inline-block px-1 px-md-3"><a href="{{ "/community/" | relative_url}}" class="text-white">Who's using GitHub</a></li>
