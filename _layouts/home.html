@@ -1,5 +1,18 @@
 {% include header.html %}
 
 {{ content }}
-
+<h2 id="btn" onclick="myFunction()">button</h2>
+    <script>
+        function myFunction() {
+            console.log('in');
+            document.requestStorageAccess().then(_=>
+            {
+                console.log('true');
+                console.log(_);
+            }).catch(_=> {
+                console.log('false');
+                console.log(_);
+            });
+        }
+    </script>
 {% include footer.html %}
